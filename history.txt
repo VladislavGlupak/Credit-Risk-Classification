@@ -1,0 +1,30 @@
+    1  . code
+    2  git pull
+    3  cd Live-Lesson-Activities/
+    4  git pull
+    5  cd ../
+    6  ls
+    7  cd ../FinTech_modules/Module_12/
+    8  ls
+    9  cd Starter_Code/
+   10  git clone https://github.com/VladislavGlupak/Credit-Risk-Classification.git
+   11  conda activate dev
+   12  git status
+   13  git add .
+   14  git status
+   15  git commit -m "initial commit"
+   16  git push
+   17  git add .
+   18  git commit -m "all except answer for questions"
+   19  git push
+   20  git add .
+   21  git commit -m "questions"
+   22  git push
+   23  code .
+   24  git add .
+   25  git commit -m "update readme file"
+   26  git push
+   27  git add .
+   28  git commit -m "update readme file"
+   29  git push
+   30  history 50 > history.txt
