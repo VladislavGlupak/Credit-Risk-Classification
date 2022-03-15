@@ -64,6 +64,8 @@ from sklearn.linear_model import LogisticRegression
 model = LogisticRegression(random_state=1)
 ```
 
+---
+
 ## Results
 
 - Machine Learning Model 1 - `Logistic Regression Model with the Original Data`:
@@ -118,11 +120,28 @@ array([[18649,   116],
        [    4,   615]], dtype=int64)
 ```
 
+---
+
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
+The results regarding accuracy of the minority class are actually mixed when comparing the classifiction reports generated from the predictions with the original data versus the predictions with the resampled data.
 
-- Which one seems to perform best? How do you know it performs best?
-- Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+First, the accuracy score is much higher for the resampled data (0.993 vs 0.952), meaning that the model using resampled data was much better at detecting true positives and true negatives.
 
-If you do not recommend any of the models, please justify your reasoning.
+The precision for the minority class is higher with the orignal data (0.85) versus the resampled data (0.84) meaning that the original data was better at detecting the users that were actually going to default.
+
+In terms of the recall, however, the minority class metric using resampled data was better (0.99 vs 0.91). Meaning that the resampled data correctly clasified a higher percentage of the truly defaulting borrowers.
+
+All in, the model using resampled data was much better at detecting borrowers who are likely to default that the model generated using the original, imbalanced dataset.
+
+---
+
+## Contributors
+
+Vladislav Glupak - [Linkedin](https://www.linkedin.com/in/vladislav-glupak/)
+
+---
+
+## License
+
+It is an Open-source analysis.
