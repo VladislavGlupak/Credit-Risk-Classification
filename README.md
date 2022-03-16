@@ -1,4 +1,4 @@
-# Module 12 Report Template
+# Credit Risk Classification
 
 ## Overview of the Analysis
 
